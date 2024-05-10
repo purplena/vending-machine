@@ -21,7 +21,7 @@
     logo.addEventListener('click', () => {
       const brandName = logo.attributes['data-value'].value;
       const shelf = document.getElementById(brandName);
-      if (shelf.childElementCount == 0) {
+      if (shelf.childElementCount == 1) {
         alert('Product is no longer available! Reload your page please!');
       } else {
         showStep(2);
