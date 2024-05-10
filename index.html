@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="generate-images.js"></script>
+    <title>Soft Drink Vending Machine Project</title>
+  </head>
+  <body>
+    <div class="section-container">
+      <div class="roof"></div>
+      <div class="machine-body">
+        <!-- Left part -->
+        <div class="left-part">
+          <div class="row" id="coca">
+            <script>
+              generateImages(
+                './images/cola.jpg',
+                'https://www.pngegg.com/en/png-bofmm/download',
+                'coca'
+              );
+            </script>
+          </div>
+          <div class="row" id="fanta">
+            <script>
+              generateImages(
+                './images/fanta.jpg',
+                'https://www.pngegg.com/en/png-bofmm/download',
+                'fanta'
+              );
+            </script>
+          </div>
+          <div class="row" id="sprite">
+            <script>
+              generateImages(
+                './images/sprite.jpg',
+                'https://www.pngegg.com/en/png-bofmm/download',
+                'sprite'
+              );
+            </script>
+          </div>
+        </div>
+
+        <!-- right-part -->
+        <div class="right-part">
+          <div class="screen">
+            <div id="step-1">
+              <p>Choose your drink</p>
+            </div>
+            <div id="step-2">
+              <p class="product-name"></p>
+              <p class="product-price">1$</p>
+              <button class="pay-button">Pay</button>
+              <button class="cancel-button">Cancel</button>
+            </div>
+            <div id="step-3">
+              <p>Take your drink, please!</p>
+            </div>
+          </div>
+          <div class="logo-button-container">
+            <div class="drink">
+              <img
+                class="logo-image"
+                src="./images/cola-logo.png"
+                alt="https://www.pngegg.com/en/png-bhops/download"
+                data-value="coca"
+              />
+            </div>
+            <div class="drink">
+              <img
+                class="logo-image"
+                src="./images/fanta-logo.png"
+                alt="https://www.pngegg.com/en/png-zqgkr/download"
+                data-value="fanta"
+              />
+            </div>
+            <div class="drink">
+              <img
+                class="logo-image"
+                src="./images/sprite-logo.png"
+                alt="https://www.pngegg.com/en/png-zqgkr/download"
+                data-value="sprite"
+              />
+            </div>
+          </div>
+          <div id="drink-container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
